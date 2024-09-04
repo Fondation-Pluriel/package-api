@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller;
+namespace FondationPluriel\packageApi\Controller;
 
 use App\Repository\UserRepository;
 use Symfony\Component\HttpFoundation\Request;
@@ -12,7 +12,7 @@ use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
 use App\Entity\User;
-use App\Security\JWTTokenManager;
+use FondationPluriel\packageApi\Security\JWTTokenManager;
 
 class ApiController extends AbstractController
 {

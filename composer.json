@@ -3,6 +3,7 @@
     "description": "Package permettant d'installer les dépendances d'un projet API et de préparer des fichiers de configuration",
     "type": "library",
     "license": "MIT",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "FondationPluriel\\CreateApi\\": "src/"
