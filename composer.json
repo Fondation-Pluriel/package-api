@@ -22,10 +22,7 @@
     "scripts": {
         "post-install-cmd": [
             "symfony console lexik:jwt:generate-keypair",
-            "cp vendor/fondation-pluriel/package-api/config/packages/nelmio_api_doc.yaml config/packages/nelmio_api_doc.yaml",
-            "cp vendor/fondation-pluriel/package-api/config/routes/nelmio_api_doc.yaml config/routes/nelmio_api_doc.yaml",
-            "cp vendor/fondation-pluriel/package-api/config/packages/lexik_jwt_authentication.yaml config/packages/lexik_jwt_authentication.yaml",
-            "cp venddor/fondation-pluriel/package-api/config/packages/security.yaml config/packages/security.yaml"
+            "cp -rf vendor/fondation-pluriel/package-api/src/config/* config/"
         ]
     },
     "extra": {
