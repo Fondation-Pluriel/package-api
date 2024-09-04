@@ -1,0 +1,32 @@
+{
+    "name": "fondation-pluriel/package-api",
+    "description": "Package permettant d'installer les dépendances d'un projet API et de préparer des fichiers de configuration",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "FondationPluriel\\CreateApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fondation Pluriel"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "lexik/jwt-authentication-bundle": "^3.1",
+        "nelmio/api-doc-bundle": "^4.29"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Symfony\\Component\\Process\\PhpExecutableFinder::find() . ' bin/console lexik:jwt:generate-keypair'"
+        ]
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": true,
+            "require": "6.0.*"
+        }
+    }
+}
