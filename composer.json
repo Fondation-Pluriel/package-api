@@ -22,7 +22,7 @@
     "scripts": {
         "post-install-cmd": [
             "symfony console lexik:jwt:generate-keypair",
-            "cp -rf vendor/fondation-pluriel/package-api/src/config/* config/"
+            "xcopy /Y /E /I vendor\\fondation-pluriel\\package-api\\src\\config\\* config\\"
         ]
     },
     "extra": {
