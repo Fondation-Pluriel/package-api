@@ -21,8 +21,8 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "symfony console lexik:jwt:generate-keypair",
-            "xcopy /Y /E /I vendor\\fondation-pluriel\\package-api\\src\\config\\* config\\"
+            "php ../../../bin/console lexik:jwt:generate-keypair",
+            "xcopy /Y /E /I src\\config\\* ..\\..\\..\\config\\"
         ]
     },
     "extra": {
