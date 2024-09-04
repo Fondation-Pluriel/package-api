@@ -6,7 +6,7 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "FondationPluriel\\CreateApi\\": "src/"
+            "FondationPluriel\\PackageApi\\": "src/"
         }
     },
     "authors": [
@@ -21,7 +21,10 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "xcopy /Y /E /I src\\config\\* ..\\..\\..\\config\\"
+            "php copy-config.php"
+        ],
+        "post-update-cmd": [
+            "php copy-config.php"
         ]
     },
     "extra": {

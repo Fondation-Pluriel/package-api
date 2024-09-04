@@ -1,6 +1,6 @@
 <?php
 
-namespace FondationPluriel\packageApi\Security;
+namespace FondationPluriel\PackageApi\Security;
 
 use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
 use Symfony\Component\Security\Core\User\UserInterface;

@@ -1,6 +1,6 @@
 <?php
 
-namespace FondationPluriel\packageApi\Controller;
+namespace FondationPluriel\PackageApi\Controller;
 
 use App\Repository\UserRepository;
 use Symfony\Component\HttpFoundation\Request;
