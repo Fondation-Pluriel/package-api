@@ -21,7 +21,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "Symfony\\Component\\Process\\PhpExecutableFinder::find() . ' bin/console lexik:jwt:generate-keypair'"
+            "symfony console lexik:jwt:generate-keypair"
         ]
     },
     "extra": {
