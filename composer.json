@@ -21,7 +21,6 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "php ../../../bin/console lexik:jwt:generate-keypair",
             "xcopy /Y /E /I src\\config\\* ..\\..\\..\\config\\"
         ]
     },
